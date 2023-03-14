@@ -2,7 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-
+import Countrylist from "../components/countrylist";
+import Worldmap from "../components/worldmap";
 const inter = Inter({ subsets: ["latin"] });
 
 import { supabase } from "./../lib/supabaseClient";
@@ -11,6 +12,9 @@ function Page({ countries }) {
   return (
     <div id="main">
       <h1>Welcome to geomap</h1>
+      <Countrylist></Countrylist>
+      <Worldmap></Worldmap>
+
       <div id="item1">
         <ul>
           {countries.map((country) => (
@@ -19,7 +23,7 @@ function Page({ countries }) {
         </ul>
       </div>
 
-      <div id="item2">
+      <div id="item3">
         <svg
           id="allSvg"
           baseprofile="tiny"
