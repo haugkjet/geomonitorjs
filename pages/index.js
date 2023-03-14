@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Countrylist from "../components/countrylist";
-import Worldmap from "../components/worldmap";
+import Countrylist from "../components/Countrylist";
+import Worldmap from "../components/Worldmap";
 const inter = Inter({ subsets: ["latin"] });
 
 import { supabase } from "./../lib/supabaseClient";
